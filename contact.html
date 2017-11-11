@@ -6,8 +6,7 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
  <body>
-	 	<div id="page">
-	 		<!-- Headers and Nav Bar -->
+	  	<!-- Headers and Nav Bar -->
 	 		<header>
 	 				<h1>Julia Lidstrom</h1>
 						<nav> 
@@ -18,11 +17,13 @@
 							</ul>
 						</nav>
 	 		</header>
-	 		<!-- Main body -->
+	 	<!-- Main body -->
+	 	<div id="page">
 			<div id="contact">
-					<h2>Portfolio</h2>
+					<h2>Contact</h2>
 					<hr>
-					<form>
+					<form class="pure-form pure-form-stacked">
+					
 						<label for="name">Name</label> <br/>
 						<input id="name" type="text" placeholder="John Smith" required=""> <br/> <br>
 
@@ -30,29 +31,31 @@
 						<input id="email" type="email" placeholder="example@gmail.com" required=""> <br/> <br>
 
 						<label for="message">Message</label> <br>
-							<textarea id="message" cols="50" rows="10">Write your message</textarea> <br><br>
+							<textarea id="message" cols="50" rows="10"></textarea> <br><br>
 
 						<button>Submit</button>
 					</form>
 			</div>
-			<!-- Connect with Me section -->
+		<!-- Connect with Me section -->
 				<aside>
-					<h3>Connect with Me</h3>
-						<a href="#">
+					<h2>Connect with Me</h2>
+					<hr>
+					<div id="social">
+						<a href="#" target="_blank">
 							<img src="assets/images/Github.png" alt="GitHub Logo">
 						</a>
-						<a href="#">
+						<a href="#" target="_blank"> 
 								<img src="assets/images/linkedin.png" alt="LinkedIn Logo">
 						</a>
-						<a href="#">
+						<a href="#" target="_blank">
 							<img src="assets/images/Twitter.png" alt="Twitter Logo">
 						</a>
+					</div>
 				</aside>
-				<!-- Footer -->
+		</div>
+			<!-- Footer -->
 			<footer>
 				&copy; Copyright 2017 Julia Lidstrom
 			</footer>
-	
-		 </div>
- </body>
+	 </body>
 </html>

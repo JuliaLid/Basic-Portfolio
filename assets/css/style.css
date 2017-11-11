@@ -6,12 +6,12 @@ body {
 	margin: 0 auto;
 }
 
-#page {
+#page  {
 	width: 960px;
 	margin:20px auto 20px auto;
 }
 
-#content{
+#content , #portfolio {
 	width: 650px;
 	float: left;
 }
@@ -63,7 +63,7 @@ article {
 	float: left;
 	background-color: #ffffff;
 	padding: 10px 10px 10px 10px;
-	margin: 60px auto;
+	margin: 30px auto;
 }
 
 h2 {
@@ -86,7 +86,7 @@ aside {
 	width: 270px;
 	float: right;
 	background-color: #ffffff;
-	margin: 60px auto;
+	margin: 30px auto;
 	padding: 0px 0px 0px 10px;
 }
 
@@ -111,7 +111,8 @@ a img {
 
 hr {
 	margin: 0px 20px 0px 20px;
-	height: 1px; 
+	height: 0.5px; 
+	background-color: #666666;
 }
 
 /*styling forfooter*/
@@ -124,4 +125,49 @@ footer {
 	height: 50px;
 	padding: 7px 0px 0px 20px;
 	border-top: thick solid #6DBDD6;
+}
+
+#contact {
+	width: 627px;
+	float: left;
+	background-color: #ffffff;
+	padding: 10px 10px 10px 10px;
+	margin: 30px auto;
+}
+
+form {
+	margin-left: 20px;
+	line-height: 150%;
+}
+
+label {
+	color:#777777;
+	font-weight: bold;	
+}
+
+button {
+	background-color: #6DBDD6;
+	color: #ffffff;
+	border-radius: 4px;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	height: 30px;
+	width: 150px;
+	font-size: 18px;
+}
+
+#name , #email, #message {
+	margin-top: 5px;
+}
+
+#portfolio {
+	float: left;
+	background-color: #ffffff;
+	padding: 10px 10px 10px 10px;
+	margin: 30px auto;
+}
+
+.projectName {
+	height: 150px;
+	width:250px;
+	float: left;
 }
