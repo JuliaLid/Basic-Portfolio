@@ -1,6 +1,6 @@
-# Basic-Portfolio
+# Basic-Portfolio Assignment 
 
-##Overview: 
+## Overview: 
 Homework assignment #1 - build a professional portfoloio site based on a provided style guide.
 
 ## Technology 
