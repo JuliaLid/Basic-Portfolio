@@ -18,24 +18,28 @@ body {
 }
 
 /*styling for header including nav bar*/
-h1 {
-	height: 70px;
-	width: 250px;
-	font-size: 28px;
-	background-color: #6DBDD6;
-	color:#ffffff;
-	margin: 0;
-	text-align: center;
-	vertical-align: middle;
-	line-height: 70px;
-	border-bottom: 2px solid #cccccc;
-}
 nav {
-	height: 50px;
+	height: 70px;
 	background-color: #ffffff;
 	border-bottom: 2px solid #cccccc;
 	border-top: 1px solid #cccccc;
+	/*position: relative;*/
 }
+
+h1 {
+	height: 68px;
+	width: 250px;
+	font-size: 34px;
+	background-color: #6DBDD6;
+	color:#ffffff;
+	text-align: center;
+	float: left;
+	line-height: 50px;
+	letter-spacing: 3px;
+	font-family: 'Poiret One', cursive;
+	font-weight: bold;
+}
+
 nav ul {
 	margin: 0px;
 	padding: 10px 0px 5px 30px;
@@ -53,6 +57,8 @@ nav a,a {
 }
 nav a:hover {
 	color: #6DBDD6;
+	font-size: 20px;
+	font-weight: bold;
 }
 
 /*styling for main content*/
@@ -86,7 +92,7 @@ p {
 #headshot {
 	width: 200px;
 	height: 200px;
-	padding: 0px 5px 0px 0px;
+	padding-right: 10px;
 	float: left;
 }
 
@@ -109,7 +115,54 @@ a img {
 	height: 80px;
 	vertical-align: middle;
 	opacity: 0.8;
+	padding-right: 5px;
 }
+
+/* * Hover.css (http://ianlunn.github.io/Hover/)
+ * Version: 2.2.1
+ * Author: Ian Lunn @IanLunn
+ * Author URL: http://ianlunn.co.uk/
+ * Github: https://github.com/IanLunn/Hover
+ Used under MIT License*/
+
+@-webkit-keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+@keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+.hvr-pulse {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+.hvr-pulse:hover, .hvr-pulse:focus, .hvr-pulse:active {
+  -webkit-animation-name: hvr-pulse;
+  animation-name: hvr-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
 #social {
 	padding-bottom: 20px;
 	margin-left: auto;
@@ -150,18 +203,26 @@ label {
 	font-weight: bold;	
 }
 
+#name, #email {
+	border-radius: 5px;
+	height: 30px;
+}
+
+#message {
+	border-radius: 5px;
+}
 /*styling for Submit button*/
 button {
 	background-color: #6DBDD6;
 	color: #ffffff;
 	border-radius: 4px;
-	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	letter-spacing: 2px;
 	height: 30px;
 	width: 150px;
 	font-size: 18px;
 }
 button:hover {
-	text-shadow: 1px 1px 2px #427388; 
+	background-color: #42aaf4;
 	font-size: 20px;
 	box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
 } 
@@ -206,4 +267,27 @@ button:hover {
 .responsive {
 	padding: 6px;
 	float: left;
+}
+
+/*styling for hover effects 
+Hover.css (http://ianlunn.github.io/Hover/)
+ * Version: 2.2.1
+ * Author: Ian Lunn @IanLunn
+ * Author URL: http://ianlunn.co.uk/
+ * Github: https://github.com/IanLunn/Hover
+  Used under MIT License */
+.hvr-bounce-in {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.hvr-bounce-in:hover, .hvr-bounce-in:focus, .hvr-bounce-in:active {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
 }
